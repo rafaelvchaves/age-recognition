@@ -50,5 +50,6 @@ for dir in directories:
     source_dir = os.path.join(main_dir, dir)
     for file_name in os.listdir(source_dir):
       shutil.move(os.path.join(source_dir, file_name), target_dir)
+    os.rmdir(source_dir)
   except:
     continue
