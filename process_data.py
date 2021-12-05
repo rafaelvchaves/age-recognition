@@ -53,3 +53,5 @@ for dir in directories:
     os.rmdir(source_dir)
   except:
     continue
+
+os.rmdir(os.path.join(main_dir, "face_age"))
